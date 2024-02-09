@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Calculadora - IMC</title>
+</head>
+<body>
+    <main class="container">
+        <section class="img">
+            <img src="./assets/ilustration.svg" alt="two persons taking care of your health">
+        </section>
+
+        <section class="calculator">
+            <form action="submit" class="form">
+                <h1 class="title">Calculadora - IMC</h1>
+
+                <div class="input-box">
+                    
+                    <label for="weight">Peso em KG</label>
+                    <div class="input-field">
+                        <i class="fa-solid fa-weight-hanging"></i>
+                        <input type="number" class="weight" required>
+                        <span>KG</span>
+                    </div>
+
+                    <label for="height">Altura em Metros</label>
+                    <div class="input-field">
+                        <i class="fa-solid fa-ruler"></i>
+                        <input type="number" class="height" required>
+                        <span>M</span>
+                    </div>
+
+                    <button class="calculate">Calculatar</button>
+                </div>
+            </form>
+
+            <div class="infos">
+                <div class="resut">
+                    
+                    <div class="bmi">
+                        <span class="value"></span>
+                        <span>Seu IMC</span>
+                    </div>
+
+                    <div class="description">
+                        <span></span>
+                    </div>
+
+                </div>
+
+                <div class="more-info">
+                    <a href="https://biblioteca.observatoriodaaps.com.br/blog-obesidade-no-brasil-um-olhar-para-juventude/
+                    ?utm_source=google&utm_medium=cpm&utm_campaign=geral&utm_content=UM048-GS&gclid=CjwKCAiAt5euBhB9EiwAdkXWO
+                    _cEy7D6qqgqlPwCHkFwAtZKm8D1NXyYr3A77Kk0Iqh-3VHN09DjqxoCAuUQAvD_BwE">
+                        Mais informações sobre IMC
+
+                        <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                    </a>
+                </div>
+            </div>
+        </section>
+    </main>
+    <script src="https://kit.fontawesome.com/c281042b15.js" crossorigin="anonymous"></script>
+    <script src="./script.js"></script>
+</body>
+</html>
