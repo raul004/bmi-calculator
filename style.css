@@ -193,3 +193,27 @@ body {
 .attention {
     color: #dc2626;
 }
+
+/* RESPONSIVE SCREEN 1024px*/
+@media screen and (max-width: 1024px) {
+    .container > .img > img {
+        display: none;
+    }
+}
+
+
+/* RESPONSIVE SCREEN 500px*/
+@media screen and (max-width: 500px) {
+    .container {
+        height: 100%;
+        width: 100%;
+        gap: 0;
+    }
+
+    .container > .calculator {
+        height: 100%;
+        width: 100%;
+        justify-content: center;
+        border-radius: 0;
+    }
+}
