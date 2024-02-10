@@ -1,0 +1,180 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100vh;
+    background-color: #18181b;
+}
+
+
+/* STYLE MAIN CONTAINER */
+.container {
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+}
+
+
+/* STYLE IMAGE SECTION */
+.container > .img > img {
+    width: 32rem;
+}
+
+
+/* STYLE CALCULATOR SECTION */
+.container > .calculator {
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+    padding: 2rem;
+    color: #f8fafc;
+    background-color: #262626;
+    border-radius: 8px;
+}
+
+
+/* STYLE FORM CALCULATOR */
+.container > .calculator > .form {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.form > .title {
+    font-size: 1.9rem;
+    position: relative;
+}
+
+.title::after {
+    position: absolute;
+    content: '';
+    background-color: #16a32a;
+    width: 6rem;
+    height: 3px;
+    bottom: 0;
+    left: 0;
+    border-radius: 3px;
+}
+
+
+/* STYLE INPUT BOX FORM CALCULATOR */
+.form > .input-box > label {
+    font-size: 0.9rem;
+    color: #cbd5e1;
+    font-weight: 500;
+}
+
+.input-field {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #3f3f46;
+    padding: 3.5%;
+    border-radius: 2px;
+    margin-top: 3px;
+    margin-bottom: 10%;
+}
+
+.input-field > span,
+.input-field > i {
+    color: #cbd5e1;
+    font-size: 1.3rem;
+    padding: 0.6 1rem ;
+}
+
+.input-field > input {
+    background-color: transparent;
+    border: none;
+    width: 100%;
+    font-size: 1.3rem;
+    color: #f8fafc;
+    padding: 0 0.5rem;
+}
+
+.input-field input::-webkit-outer-spin-button,
+.input-field input::-webkit-inner-spin-button {
+    appearance: none;
+}
+
+.input-field input:focus {
+    outline: none;
+}
+
+
+/* STYLE BUTTON FORM CALCULATOR */
+.calculator > .form > .input-box > .calculate {
+    width: 100%;
+    border: none;
+    font-size: 1.25rem;
+    font-weight: 500;
+    background-color: #16a32a;
+    color: #f8fafc;
+    padding: 0.5rem 0;
+    border-radius: 5px;
+    cursor: pointer;
+
+    transition: all 0.5s;
+}
+
+.calculate:hover{
+    background-color: #f8fafc;
+    color: #16a32a;
+}
+
+
+/* STYLE INFOS: RESULT AND DESCRIPTION */
+.infos > .result {
+    display: flex;
+    gap: 2rem;
+    align-items: center;
+    border-top: 1px solid #ffffff34;
+    padding: 0.75rem 0;
+}
+
+.infos > .result > .bmi {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    font-size: 2rem;
+}
+
+.infos > .result > .bmi > span:last-child {
+    font-size: 0.85rem;
+    color: #cbd5e1;
+}
+
+.infos > .result > .description {
+    width: 15.5rem;
+}
+
+
+/* STYLE MORE INFO */
+.more-info {
+    border-top: 1px solid #ffffff34;
+    padding-top: 0.85rem;
+}
+
+.more-info > a {
+    color: #16a32a;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 0.875rem;
+    gap: 0.6rem;
+    text-decoration: none;
+    transition: color 0.5s;
+}
+
+.more-info > a:hover {
+    color: #cbd5e1;
+}
