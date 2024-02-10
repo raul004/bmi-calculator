@@ -15,19 +15,22 @@ form.addEventListener('submit', function(event) {
     let descriptionBMI = '';
 
     document.querySelector('.infos').classList.remove('hidden');
+    value.classList.add('attention');
 
     if (bmi < 18.5) {
-        descriptionBMI = 'Você abaixo do peso ideal.'
+        descriptionBMI = 'Você abaixo do peso ideal.';
     } else if (bmi >= 18.5 && bmi <= 25) {
-        descriptionBMI = 'Você está no peso ideal!'
+        descriptionBMI = 'Você está no peso ideal!';
+        value.classList.remove('attention');
+        value.classList.add('normal');
     } else if (bmi > 25 && bmi <= 30) {
-        descriptionBMI = 'Você está com sobrepeso.'
+        descriptionBMI = 'Você está com sobrepeso.';
     } else if (bmi > 30 && bmi <= 35) {
-        descriptionBMI = 'Você está com obesidade moderada.'
+        descriptionBMI = 'Você está com obesidade moderada.';
     } else if (bmi > 35 && bmi <= 40) {
-        descriptionBMI = 'Você está com obesidade severa.'
+        descriptionBMI = 'Você está com obesidade severa.';
     } else {
-        descriptionBMI = 'Você está com obesidade mórbida.'
+        descriptionBMI = 'Você está com obesidade mórbida.';
     }
 
     value.textContent = bmi.replace('.', ',');

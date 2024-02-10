@@ -183,3 +183,13 @@ body {
 .hidden {
     display: none;
 }
+
+
+/* CLASS NORMAL AND ATTENTION */
+.normal {
+    color: #16a32a;
+}
+
+.attention {
+    color: #dc2626;
+}
