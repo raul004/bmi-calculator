@@ -21,14 +21,14 @@
                     <label for="weight">Peso em Kg</label>
                     <div class="input-field">
                         <i class="fa-solid fa-weight-hanging"></i>
-                        <input type="number" class="weight" required>
+                        <input type="number" pattern="[0-9]+([,\.][0-9]+)?" min="0" step="any" class="weight" required>
                         <span>Kg</span>
                     </div>
 
                     <label for="height">Altura em Metros</label>
                     <div class="input-field">
                         <i class="fa-solid fa-ruler"></i>
-                        <input type="number" class="height" required>
+                        <input type="number" pattern="[0-9]+([,\.][0-9]+)?" min="0" step="any" class="height" required>
                         <span>m</span>
                     </div>
 
@@ -40,12 +40,12 @@
                 <div class="result">
                     
                     <div class="bmi">
-                        <span class="value">55</span>
+                        <span class="value"></span>
                         <span>Seu IMC</span>
                     </div>
 
                     <div class="description">
-                        <span>55</span>
+                        <span></span>
                     </div>
 
                 </div>
