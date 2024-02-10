@@ -88,7 +88,7 @@ body {
 .input-field > span,
 .input-field > i {
     color: #cbd5e1;
-    font-size: 1.3rem;
+    font-size: 1.2rem;
     padding: 0.6 1rem ;
 }
 
@@ -122,11 +122,11 @@ body {
     padding: 0.5rem 0;
     border-radius: 5px;
     cursor: pointer;
-
+    
     transition: all 0.5s;
 }
 
-.calculate:hover{
+.calculator > .form > .input-box > .calculate:hover{
     background-color: #f8fafc;
     color: #16a32a;
 }
@@ -177,4 +177,9 @@ body {
 
 .more-info > a:hover {
     color: #cbd5e1;
+}
+
+/* CLASS HIDDEN */
+.hidden {
+    display: none;
 }
